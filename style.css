@@ -1,0 +1,620 @@
+*
+{
+    margin: 0;
+    padding:0;
+}
+
+/* font */
+
+@font-face {
+    font-family: Mulish-Light;
+    src: url(fonts/Mulish-Light.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Regular;
+    src: url(fonts/Mulish-Regular.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Medium;
+    src: url(fonts/Mulish-Medium.ttf);
+}
+
+@font-face {
+    font-family: Mulish-Bold;
+    src: url(fonts/Mulish-Bold.ttf);
+}
+/* general */
+html{
+    font-family: Mulish-Light;
+    font-size: 16px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+/* section1  */
+
+.header{
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: 50px;
+}
+
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 40px;
+}
+.header nav ul{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-family: Mulish-Bold;
+
+
+}
+.header nav ul li a{
+    /* #1F1534 */
+    /*     color: #1F1534;
+ */
+    color:#1F1534;
+    opacity: .5;
+    font-family: Mulish-Bold;
+    font-size: 20px;
+
+}
+.header nav ul :hover{
+    
+opacity: 1;
+font-family: Mulish-Bold;
+
+}
+
+.header .containeer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    padding-block: 35px;
+}
+.header .containeer .right h1 {
+    font-family: Mulish-Bold;
+    font-size: 48px;
+    margin-block: 25px;
+}
+.header .containeer .right
+{
+    width: 40%;
+padding-top: 25px;
+}
+.header .containeer .right p
+{
+    font-family: Mulish-light;
+    font-size: 21px;
+color:#7D7987;
+padding-block: 50px;
+
+}
+.header .containeer .right button{
+    padding: 20px;
+    background-color: #458FF6;
+    color: white;
+    margin-top: 15px;
+    border-radius: 55px;
+    padding-inline: 40px;
+    border: none;
+    font-size: 18px;
+    font-family:Mulish-Medium ;
+    
+}
+.head
+{
+    position: relative;
+}
+.header-img{
+    position: absolute;
+    top: 20%;
+    transform: translateY(-53%);
+    left: -3%;
+    z-index: -1;
+    
+}
+
+
+/* section ourservice */
+.ourse
+{
+    background: no-repeat;
+    background-image: url(images/ourservice/Frame.png);
+    position: relative;
+}
+.ourservice
+{
+    padding-block: 60px;
+    width: 80%;
+    margin-inline: auto;
+  
+}
+.service-img{
+    position: absolute;
+    top: 56%;
+    transform: translateY(-53%);
+    right: 10%;
+    z-index: -1;
+    
+}
+
+/* content */
+.ourservice .content
+{
+    width: 72%;
+    margin-inline: auto;
+    text-align: center;
+}
+.ourservice .content h2
+{
+    font-size: 36px;
+padding-block: 45px;
+position: relative;
+}
+
+.ourservice .content h2::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -24px;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+    margin-block: 40px;
+}
+.ourservice .content p
+{
+    color: #7D7987;
+    padding-block: 25px;
+
+}
+/* boxes */
+
+.ourservice .boxes
+{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+    flex-wrap: wrap;
+  }
+  .ourservice .boxes .block img{
+    width: 92px;
+    height: 90px;
+  }
+.ourservice .boxes .block
+{
+    
+    width: calc( (100% / 3) - 2 * 1rem - 2 * 3.2rem);
+    margin-bottom: 20px;
+    padding: 35px;
+    background-color: white;
+    border-radius: 30px;
+}
+.ourservice .boxes .block h3
+{
+    font-size: 24px;
+    padding-block: 15px;
+    font-family: Mulish-Bold;
+}
+.ourservice .boxes .block p
+{
+    color: #7D7987;
+    font-size: 16px;
+    font-family: Mulish-Medium;
+}
+.btnservices 
+{
+    width: 100%;
+    text-align: center;
+}
+.btn
+{
+padding-inline: 40px;
+padding-block: 15px;
+color: #458FF6;
+border-radius: 40px;
+border: #458FF6 solid 1px;
+background-color: white;
+font-family: Mulish-Bold;
+margin-top: 50px;
+}
+.btn:hover{
+    color: white;
+    background-color: #458FF6 ;
+    border: #ffffff solid 1px;
+
+}
+
+
+/* healthcare */
+
+.healthcare 
+{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-inline: auto;
+    padding-block: 75px;
+}
+.healthcare .content
+{
+    width: 40%;
+}
+.healthcare h3
+{
+    position: relative;
+    font-size: 36px;
+    font-family: Mulish-Bold;
+    width: 75%;
+    padding-bottom: 35px;
+}
+.healthcare p{
+    color: #7D7987;
+    width: 80%;
+    padding-block: 25px;
+    font-family: Mulish-Regular;
+    font-size: 18px;
+    
+}
+.healthcare .content h3::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -24px;
+    width: 65px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+    margin-block: 40px;
+}
+
+/* download section */
+.download
+{
+    padding-block: 70px;
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin-inline: auto;
+}
+.download .content{
+    width: 35%;
+}
+
+
+.download .content h3
+{
+    position: relative;
+    font-size: 36px;
+    font-family: Mulish-Bold;
+    width: 75%;
+    padding-bottom: 35px;
+}
+.download .content h3::after{
+    content: '';
+    position: absolute;
+    left: 0%;
+    bottom: -24px;
+    width: 65px;
+    height: 2px;
+    background-color: #000000;
+    border-radius: .3125rem;
+    margin-block: 40px;
+}
+.download .content p{
+    color: #7D7987 ;
+    padding-block: 25px;
+    font-family: Mulish-Medium;
+    font-size: 18px;
+}
+
+/* customer                              */
+.customer{
+    padding-block: 120px;
+}
+.customer .containeer
+{
+    width: 66%;
+    margin-inline: auto;
+    background-image: linear-gradient(to top right,#5A98F2,#67C3F3 );
+    border-radius: 24px;
+    padding: 20px 0px 50px;
+    color: white;
+}
+.customer .containeer h3
+{
+    font-family: Mulish-Bold;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 25px;
+    position: relative;
+    
+}
+.customer .containeer h3::after
+{
+    content: '';
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    width: 65px;
+    height: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 3px;
+}
+.customer .containeer .cont 
+{
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.customer .containeer .cont .cust{
+    display: flex;
+    margin-top: -12px;
+    width: 40%;
+    justify-content: space-around;
+    padding-left: 45px;
+    align-items: center;
+    top: 5px;
+}
+.customer .containeer .cont .opinion
+{
+    align-items: center;
+    font-family: Mulish-Regular;
+    font-size: 19px;
+    width: 50%;
+    margin-right: 15px;
+}
+.customer .containeer .cont  img{
+    border-radius: 50%;
+
+}
+.customer .containeer .cont .cust .custom-info .name
+{
+    padding-bottom: 5px;
+    font-family: Mulish-Bold;
+    font-size: 20px;
+}
+.customer .containeer .cont .cust .custom-info .job
+{
+    font-family: Mulish-Regular;
+    font-size: 18px;
+}
+.customer .img-navcustom{
+    text-align: center;
+    padding-block: 40px;
+}
+.customer
+{
+    position: relative;
+}
+.customer-dotesbottom{
+    position: absolute;
+    bottom: 25%;
+    transform: translateY(-53%);
+    left: 13%;
+    z-index: -1;
+    
+}
+.customer-dotestop{
+    position: absolute;
+    top: 27%;
+    transform: translateY(-53%);
+    right: 17%;
+    z-index: -1;
+    opacity: 26%;
+    background-color: white;
+}
+/* services */
+
+
+  .services {
+    background-image: url(image/element.png);
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-block: 4rem;
+  }
+  .services  .container {
+    width: 80%;
+    margin-inline: auto;
+  }
+  .services h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    position: relative;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .services h3::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -16px;
+    width: 56px;
+    height: 2px;
+    border-radius: 0.3125rem;
+    background-color: #000;
+  }
+  .services .card-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+    position: relative;
+  }
+  .services .card {
+    border-radius: 1.25rem;
+    background-color: #fff;
+    box-shadow: 10px 40px 50px 0px #e5e9f666;
+  }
+  .services .card .img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 1.25rem 1.25rem 0 0;
+  }
+  .services .card-details {
+    padding: 1.5rem;
+  }
+  .services .card-details h6 {
+    font-size: 21px;
+    font-weight: 700;
+  }
+  .services .card-details p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-block: 1rem;
+    color: #7d7987;
+  }
+  .services .card-details a {
+    text-decoration: none;
+    color: #4089ed;
+    font-family: Muli;
+    font-size: 17px;
+    font-weight: 600;
+  }
+  .services .card-details a img {
+    margin-inline-start: 0.5rem;
+  }
+  .services .img-square {
+    position: absolute;
+    top: -48px;
+    left: -48px;
+    z-index: -1;
+  }
+ 
+  .services .secondary-button{
+    margin-top: 3rem;
+    border-radius: 55px;
+    border: 1.5px solid #458FF6;
+    color: #458FF6;
+    text-decoration: none;
+    width: 200px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+  }
+  @media (max-width: 768px){
+  html {
+    font-size: 14px;
+  }
+    .card-container{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 2rem;
+    }
+  }
+
+  @media (max-width: 500px){
+  html {
+    font-size: 12px;
+  }
+    .card-container{
+        grid-template-columns: 1fr;
+    }
+  }
+
+
+
+
+
+/* footer */
+
+
+footer{
+    background-image: linear-gradient(to top right,#5A98F2,#67C3F3 );
+
+}
+
+footer .containeer
+{
+    width: 80%;
+    margin-inline: auto;
+    padding: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .containeer .trafalgar .logo-traf
+{
+    border-radius: 50%;
+    background-color: white;
+    color: #5B9BF3 ;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    justify-items: center;
+    
+    font-size: 26px;
+}
+footer .containeer .trafalgar {
+    color: white;
+    font-size: 18px;
+    width: 27%;
+}
+footer .containeer .trafalgar .less{
+font-size: 16px;
+font-family: Mulish-Light;
+
+}
+footer .containeer .trafalgar span {
+    font-family: Mulish-Bold;
+font-size: 24px;
+padding-left: 5px
+}
+footer .containeer .trafalgar p {
+
+    padding-block: 15px;
+    font-family: Mulish-Light;
+
+
+}
+footer .containeer  .head
+{
+    font-family: Mulish-Bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+footer .containeer li
+{
+    font-family: Mulish-Light;
+
+    font-size: 18px;
+    color: white;
+    margin-block: 10px;
+
+}
+footer{
+position: relative;
+}
+.footer-dotesbottom{
+    position: absolute;
+    top: -2%;
+    transform: translateY(-53%);
+    right: 6%;
+    z-index: -1;
+    
+}
